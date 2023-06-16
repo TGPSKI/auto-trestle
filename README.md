@@ -9,3 +9,4 @@ auto-tresle is a prototype tool that provides `compliance-trestle` with a contai
 * Support mutli-author, responsible parties, version control, and multi-hand review via git workflows
 * Generate SSP reports from a target git repository
 
+*insipired by chassing/qontract-development-cli*

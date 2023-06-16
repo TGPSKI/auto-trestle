@@ -9,8 +9,19 @@ packages = [{include = "auto_trestle"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+compliance-trestle = "^2.1.1"
 
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+flake8 = "^5.0.4"
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+force_grid_wrap = 2
+float_to_top = true
