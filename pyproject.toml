@@ -15,6 +15,7 @@ compliance-trestle = "^2.1.1"
 black = "^22.10.0"
 flake8 = "^5.0.4"
 isort = "^5.10.1"
+safety = "^2.3.5"
 
 [build-system]
 requires = ["poetry-core"]
