@@ -10,7 +10,7 @@ CONTAINER_UID ?= $(shell id -u)
 include .env-dev
 
 bootstrap-fixtures:
-	@./hack/bootstrap-fixtures-oscal.sh $(CONTROLS_REVISION) $(CONTROLS_GIT_REPO) $(CONTROLS_CONTENT_DIR)
+	#@./hack/bootstrap-fixtures-oscal.sh $(CONTROLS_REVISION) $(CONTROLS_GIT_REPO) $(CONTROLS_CONTENT_DIR)
 	@./hack/bootstrap-trestle.sh $(INTERFACE_CONTENT_DIR) $(CONTROLS_REVISION)
 .PHONY: bootstrap-fixtures
 

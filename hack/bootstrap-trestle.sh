@@ -33,7 +33,10 @@ CONTROL_BASELINE_PROFILE_FILENAME=FedRAMP_${OSCAL_REVISION}_${CONTROL_LEVEL}-bas
 CONTROL_PATH_PREFIX=baselines/${CONTROL_FILETYPE}
 CONTROL_SHORTNAME=FedRAMP-${CONTROL_LEVEL}-${OSCAL_REVISION}
 
+
 # Initialize trestle project
+# make sure $1 directory exists, if not make it, and then change into it
+mkdir -p $1
 cd $1
 trestle init
 
